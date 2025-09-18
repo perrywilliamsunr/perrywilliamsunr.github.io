@@ -7,9 +7,10 @@
   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-<header>
+<header class="site-header">
   <div class="wrap">
-    <nav>
+    <div class="brand">Perry Williams</div>
+    <nav class="site-nav">
       <a href="/index.html">Home</a>
       <a href="/research.html">Research</a>
       <a href="/publications.html">Publications</a>
@@ -18,4 +19,13 @@
     </nav>
   </div>
 </header>
-<main>
+<main id="content">
+<script>
+  // Add a 'home' class to body on the homepage for special styling
+  (function(){
+    var p = location.pathname.replace(/\/+$/, '');
+    if (p === '' || p === '/' || p.endsWith('/index.html')) {
+      document.body.classList.add('home');
+    }
+  })();
+</script>
