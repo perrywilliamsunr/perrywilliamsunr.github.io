@@ -31,6 +31,9 @@ website:
 
 format:
   html:
+    css:
+      - styles/styles.scss
+      - styles/site-final-20250919161028.css
     theme:
       light: cosmo
       dark: darkly

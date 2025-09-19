@@ -1,0 +1,31 @@
+/* FINAL OVERRIDES shipped via Actions (loads LAST) */
+.proj-grid{
+  display:grid !important;
+  gap:1.25rem !important;
+  grid-template-columns:repeat(auto-fit,minmax(360px,1fr)) !important;
+  align-items:stretch !important;
+}
+.proj-card{
+  display:flex !important; flex-direction:column !important; gap:.7rem !important;
+  padding:1rem !important; background:#f7efe5 !important; border-radius:16px !important;
+  box-shadow:0 2px 8px rgba(0,0,0,.06) !important; height:100% !important;
+}
+img.proj-img, #quarto-document-content img.proj-img{
+  width:100% !important;
+  aspect-ratio:3/2 !important;
+  height:auto !important;
+  object-fit:contain !important;
+  background:rgba(0,0,0,.04) !important;
+  border-radius:12px !important;
+  display:block !important;
+}
+#quarto-document-content img.about-photo{
+  width:260px !important; max-width:40% !important; height:auto !important;
+  object-fit:cover !important; border-radius:9999px !important;
+  float:right; margin:0 0 .75rem 1rem; box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+@media (max-width:700px){
+  #quarto-document-content img.about-photo{
+    float:none; display:block; margin:0 auto .75rem; width:200px !important; max-width:70% !important;
+  }
+}
