@@ -1,87 +1,150 @@
-:root{
-  --w: 1200px;               /* page max width */
-  --ink:#0b2a4a;             /* primary text / headers */
-  --ink-2:#1e446e;           /* secondary text */
-  --accent:#2a7ea8;          /* links/buttons */
-  --border:#e6edf5;          /* subtle border */
-  --bg-soft:#fafcff;         /* soft card background */
-}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Understanding patterns in the natural world — Perry Williams</title>
+  <style>
+  :root{
+    --w: 1200px;               /* page max width */
+    --ink:#0b2a4a;             /* primary text / headers */
+    --ink-2:#1e446e;           /* secondary text */
+    --accent:#2a7ea8;          /* links/buttons */
+    --border:#e6edf5;          /* subtle border */
+    --bg-soft:#fafcff;         /* soft card background */
+  }
+  *{box-sizing:border-box}
+  html,body{
+    margin:0;padding:0;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;color:#111;background:#fff;
+    font-size:17px;
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  }
+  img{max-width:100%;height:auto;display:block}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  p{margin:10px 0}
+  hr{border:0;border-top:1px solid var(--border);margin:22px 0}
+  .wrap{max-width:var(--w);margin:0 auto;padding:0 20px}
+  main.wrap{padding:28px 20px}
+  .content, main.wrap{width:100%;max-width:100%}
+  .site-header{
+    background:var(--ink);color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.12);
+    position:sticky;top:0;z-index:50
+  }
+  .flex{display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+  .brand{font-weight:800;letter-spacing:.2px}
+  .site-nav a{color:#fff;margin-left:16px;font-weight:600;opacity:.95}
+  .site-nav a:hover{opacity:1;text-decoration:none;border-bottom:2px solid rgba(255,255,255,.6)}
+  .hero{
+    background:linear-gradient(135deg,#0b2a4a0D,#2a7ea80F);
+    border:1px solid rgba(13,110,253,0.15);
+    margin:12px 0 18px 0;
+    padding:36px 0;
+  }
+  .hero-title{
+    margin:0 0 6px 0;
+    font-size:clamp(28px,4.5vw,44px);
+    line-height:1.1;letter-spacing:-0.02em;color:var(--ink);
+  }
+  .hero-tagline{
+    margin:6px 0 0 0;
+    font-size:clamp(16px,1.8vw,20px);
+    color:#475569;
+  }
+  h1,h2,h3{line-height:1.2;color:var(--ink)}
+  h1{margin:0 0 10px 0}
+  h2{margin:22px 0 8px 0}
+  h3{margin:10px 0 6px 0;color:var(--ink-2)}
+  ul{padding-left:22px}
+  ul.cardlist{
+    list-style:none;padding:0;margin:6px 0 0 0;
+    display:grid;grid-template-columns:repeat(3,1fr);gap:16px
+  }
+  ul.cardlist li{
+    border:1px solid var(--border);border-radius:12px;padding:14px;background:var(--bg-soft);
+    box-shadow:0 6px 18px rgba(0,0,0,.04)
+  }
+  @media (max-width:900px){
+    ul.cardlist{grid-template-columns:1fr}
+  }
+  .site-footer{background:var(--ink);color:#fff;margin-top:32px}
+  .site-footer .wrap{padding:14px 20px}
+  .site-footer small{opacity:.9}
+  .hero-center{display:flex;justify-content:center;margin:10px 0 24px 0}
+  .hero-center img{border-radius:8px;box-shadow:0 6px 24px rgba(0,0,0,.06)}
+  .prose p + p{margin-top:12px}
+  .prose ul{margin-top:8px}
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wrap flex">
+      <div class="brand">Perry Williams</div>
+      <nav class="site-nav">
+        <a href="./">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="cv.pdf">CV</a>
+      </nav>
+    </div>
+  </header>
 
-/* ---------- Base ---------- */
-*{box-sizing:border-box}
-html,body{
-  margin:0;padding:0;
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-  line-height:1.6;color:#111;background:#fff;
-  font-size:17px;
-  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-}
-img{max-width:100%;height:auto;display:block}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
-p{margin:10px 0}
-hr{border:0;border-top:1px solid var(--border);margin:22px 0}
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <h1 class="hero-title">Understanding patterns in the natural world</h1>
+      <p class="hero-tagline">Statistical & computational ecology for spatiotemporal dynamics and forecasting</p>
+    </div>
+  </section>
 
-/* ---------- Layout ---------- */
-.wrap{max-width:var(--w);margin:0 auto;padding:0 20px}
-main.wrap{padding:28px 20px}
-.content, main.wrap{width:100%;max-width:100%}
+  <!-- Main content -->
+  <main class="wrap content prose">
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I study how populations and ecosystems change across space and time, with an emphasis on discovery and learning
+        about complex natural processes. I build statistical and computational tools that advance ecological science and
+        improve our ability to forecast environmental dynamics.
+      </p>
+    </section>
 
-/* ---------- Header / Nav ---------- */
-.site-header{
-  background:var(--ink);color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.12);
-  position:sticky;top:0;z-index:50
-}
-.flex{display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
-.brand{font-weight:800;letter-spacing:.2px}
-.site-nav a{color:#fff;margin-left:16px;font-weight:600;opacity:.95}
-.site-nav a:hover{opacity:1;text-decoration:none;border-bottom:2px solid rgba(255,255,255,.6)}
+    <section>
+      <h2>Highlights</h2>
+      <ul class="cardlist">
+        <li>
+          <h3>Hierarchical diffusion</h3>
+          <p>New tools for hierarchical Bayesian ecological diffusion to reveal how processes spread across landscapes.</p>
+        </li>
+        <li>
+          <h3>Generalizable inference</h3>
+          <p>Case studies that connect species data to broader patterns in the natural environment.</p>
+        </li>
+        <li>
+          <h3>Reproducible forecasting</h3>
+          <p>Workflows for forecasting and uncertainty quantification.</p>
+        </li>
+      </ul>
+    </section>
 
-/* ---------- Hero ---------- */
-.hero{
-  background:linear-gradient(135deg,#0b2a4a0D,#2a7ea80F);
-  border:1px solid rgba(13,110,253,0.15);
-  margin:12px 0 18px 0;
-  padding:36px 0;
-}
-.hero-title{
-  margin:0 0 6px 0;
-  font-size:clamp(28px,4.5vw,44px);
-  line-height:1.1;letter-spacing:-0.02em;color:var(--ink);
-}
-.hero-tagline{
-  margin:6px 0 0 0;
-  font-size:clamp(16px,1.8vw,20px);
-  color:#475569;
-}
+    <section>
+      <h2>Current Projects</h2>
+      <ul>
+        <li><strong>EcoDiffusion</strong>: developing an R package for hierarchical Bayesian ecological diffusion models that help reveal how populations and processes spread across landscapes.</li>
+        <li>Investigating population dynamics and movement (e.g., sage grouse) to understand large-scale ecological change.</li>
+        <li>Exploring how human activities and natural variation shape species distributions (e.g., sea otters) as case studies of broader environmental patterns.</li>
+      </ul>
+    </section>
+  </main>
 
-/* ---------- Headings ---------- */
-h1,h2,h3{line-height:1.2;color:var(--ink)}
-h1{margin:0 0 10px 0}
-h2{margin:22px 0 8px 0}
-h3{margin:10px 0 6px 0;color:var(--ink-2)}
-
-/* ---------- Lists ---------- */
-ul{padding-left:22px}
-ul.cardlist{
-  list-style:none;padding:0;margin:6px 0 0 0;
-  display:grid;grid-template-columns:repeat(3,1fr);gap:16px
-}
-ul.cardlist li{
-  border:1px solid var(--border);border-radius:12px;padding:14px;background:var(--bg-soft);
-  box-shadow:0 6px 18px rgba(0,0,0,.04)
-}
-@media (max-width:900px){
-  ul.cardlist{grid-template-columns:1fr}
-}
-
-/* ---------- Footer ---------- */
-.site-footer{background:var(--ink);color:#fff;margin-top:32px}
-.site-footer .wrap{padding:14px 20px}
-.site-footer small{opacity:.9}
-
-/* ---------- Utilities ---------- */
-.hero-center{display:flex;justify-content:center;margin:10px 0 24px 0}
-.hero-center img{border-radius:8px;box-shadow:0 6px 24px rgba(0,0,0,.06)}
-.prose p + p{margin-top:12px}
-.prose ul{margin-top:8px}
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© <span id="y"></span> Perry Williams • Built on GitHub Pages</small>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
