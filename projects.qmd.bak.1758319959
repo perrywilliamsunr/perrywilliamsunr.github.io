@@ -1,0 +1,158 @@
+---
+title: "Projects"
+page-layout: full
+---
+
+
+<style>
+/* === FORCE BIG PROJECT IMAGES (in-page, last-wins) === */
+
+/* Make ALL images in main content BIG and not cropped */
+#quarto-document-content img {
+  display: block !important;
+  width: 100% !important;
+  height: clamp(520px, 40vw, 920px) !important; /* <-- BIG visible height */
+  object-fit: contain !important;               /* show entire image; no cropping */
+  max-width: none !important;
+  max-height: none !important;
+  border-radius: 14px;
+  background: rgba(0,0,0,.04);
+}
+
+/* If a DIV with background-image is used instead of <img> */
+#quarto-document-content [style*="background-image"],
+#quarto-document-content .project-img {
+  width: 100% !important;
+  min-height: clamp(520px, 40vw, 920px) !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  border-radius: 14px;
+}
+
+/* Give common project grids some room so images aren't cramped */
+#quarto-document-content .projects-grid,
+#quarto-document-content .project-grid,
+#quarto-document-content .cards-grid,
+#quarto-document-content .quarto-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media (min-width: 1600px) {
+  #quarto-document-content .projects-grid,
+  #quarto-document-content .project-grid,
+  #quarto-document-content .cards-grid,
+  #quarto-document-content .quarto-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+</style>
+<style>
+/* === FORCE BIG PROJECT IMAGES (in-page, last-wins) === */
+
+/* Make ALL images in main content BIG and not cropped */
+#quarto-document-content img {
+  display: block !important;
+  width: 100% !important;
+  height: clamp(520px, 40vw, 920px) !important; /* <-- BIG visible height */
+  object-fit: contain !important;               /* show entire image; no cropping */
+  max-width: none !important;
+  max-height: none !important;
+  border-radius: 14px;
+  background: rgba(0,0,0,.04);
+}
+
+/* If a DIV with background-image is used instead of <img> */
+#quarto-document-content [style*="background-image"],
+#quarto-document-content .project-img {
+  width: 100% !important;
+  min-height: clamp(520px, 40vw, 920px) !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  border-radius: 14px;
+}
+
+/* Give common project grids some room so images aren't cramped */
+#quarto-document-content .projects-grid,
+#quarto-document-content .project-grid,
+#quarto-document-content .cards-grid,
+#quarto-document-content .quarto-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media (min-width: 1600px) {
+  #quarto-document-content .projects-grid,
+  #quarto-document-content .project-grid,
+  #quarto-document-content .cards-grid,
+  #quarto-document-content .quarto-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+</style>
+__INJECT_STYLE__
+::: {.proj-grid}
+
+::: {.proj-card}
+![](assets/projects/diffusion.png){.proj-img alt="Ecological diffusion artwork"}
+### Ecological Diffusion Models & Forecasting
+Reaction–diffusion models to predict spread of populations, invasives, and disease. Work includes nonlinear and anisotropic diffusion, adaptive monitoring, and links among habitat, movement, and demography. Applications include sea otter recolonization (Alaska) and sage-grouse monitoring (Great Basin).
+
+**Representative publications:** Williams et al. 2017, 2018; Lu et al. 2020; Eisaguirre et al. 2021; Leach et al. 2022; Eisaguirre et al. 2023a.
+
+<div class="proj-actions">
+  <a href="publications.qmd">Publications</a> • <a href="assets/cv.pdf">CV</a>
+</div>
+:::
+
+::: {.proj-card}
+![](assets/projects/demography.png){.proj-img alt="Demography & harvest graphic"}
+### Wildlife Demography & Harvest Management
+Hierarchical demographic models of survival, reproduction, and movement to quantify density dependence, harvest, and environmental change. Case studies include sage-grouse dynamics, cackling goose harvest, and Golden Eagle survival. Outputs support adaptive harvest frameworks.
+
+**Representative publications:** Golden et al. (in review); Acevedo et al. (in review); Williams 2015 (PhD); Byrne 2023 (MS); Structured Decision-Making Report to the Pacific Flyway Council (2015).
+
+<div class="proj-actions">
+  <a href="publications.qmd">Publications</a> • <a href="assets/cv.pdf">CV</a>
+</div>
+:::
+
+::: {.proj-card}
+![](assets/projects/predator-prey.png){.proj-img alt="Predator–prey and coexistence art"}
+### Predator–Prey Dynamics & Human–Wildlife Conflict
+When predator recovery meets people: sea otters and shellfisheries, ravens with anthropogenic subsidies, and black bear conflict under changing snow and frost regimes. Embedding predator–prey dynamics in diffusion frameworks to inform coexistence and policy.
+
+**Representative publications:** Shoemaker et al. (in review); Brockman et al. (accepted); Eisaguirre et al. 2023b; Williams et al. 2008.
+
+<div class="proj-actions">
+  <a href="publications.qmd">Publications</a> • <a href="assets/cv.pdf">CV</a>
+</div>
+:::
+
+::: {.proj-card}
+![](assets/projects/movement.png){.proj-img alt="Telemetry to population graphic"}
+### Integrating Movement Ecology Across Scales
+Linking individual telemetry with population dynamics using step-selection, state-space, and mechanistic diffusion. Connect fine-scale choices to range dynamics to evaluate survival risk, colonization, and persistence for carnivores, game species, and threatened wildlife.
+
+**Representative publications:** Eisaguirre et al. 2025 (*Ecology Letters*); Eisaguirre, Williams & Hooten 2024 (*Movement Ecology*); Keating 2021 (MS).
+
+<div class="proj-actions">
+  <a href="publications.qmd">Publications</a> • <a href="assets/cv.pdf">CV</a>
+</div>
+:::
+
+::: {.proj-card}
+![](assets/projects/tools.png){.proj-img alt="Statistical & computational tools art"}
+### Statistical & Computational Tools for Ecology
+Bayesian model selection, multi-objective optimization, and hierarchical models for abundance and survival. Emphasis on dissemination through book chapters, extension publications, R packages, and workshops.
+
+**Representative publications:** Blume et al. 2024 (*JWM*); Gerber & Williams 2020 (CRC Press); Williams 2015 (MS); Williams 2017 (MEE blog); Womble et al. 2017 (NPS).
+
+<div class="proj-actions">
+  <a href="publications.qmd">Publications</a> • <a href="assets/cv.pdf">CV</a>
+</div>
+:::
+
+:::

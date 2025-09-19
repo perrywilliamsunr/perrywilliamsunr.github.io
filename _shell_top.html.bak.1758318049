@@ -1,0 +1,22 @@
+<!doctype html><html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Perry Williams</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap flex">
+    <div class="brand">Perry Williams</div>
+    <nav class="site-nav">
+      <a href="/index.html">Home</a>
+      <a href="/research.html">Research</a>
+      <a href="/publications.html">Publications</a>
+      <a href="/teaching.html">Teaching</a>
+      <a href="/cv.html">CV</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">

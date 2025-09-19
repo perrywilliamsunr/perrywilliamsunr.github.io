@@ -744,26 +744,3 @@ main .row:has(.project-card) .project-card img,
 #quarto-document-content h2, #quarto-document-content h3 { margin-top: 1.2rem; }
 #quarto-document-content ul { margin-left: 1.1rem; }
 #quarto-document-content li { margin-bottom: .4rem; }
-
-/* ABOUT PHOTO STYLES */
-#quarto-document-content img.about-photo{
-  width: 260px !important;
-  max-width: 40% !important;
-  height: auto !important;        /* beat any earlier fixed/clamped heights */
-  object-fit: cover !important;   /* normal headshot look */
-  border-radius: 9999px;          /* round/circle */
-  float: right;
-  margin: 0 0 0.75rem 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,.08);
-}
-
-/* Stack nicely on small screens */
-@media (max-width: 700px){
-  #quarto-document-content img.about-photo{
-    float: none;
-    display: block;
-    margin: 0 auto 0.75rem auto;
-    width: 200px !important;
-    max-width: 70% !important;
-  }
-}

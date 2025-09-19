@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /_freeze/
+Sitemap: https://perrywilliamsunr.github.io/sitemap.xml

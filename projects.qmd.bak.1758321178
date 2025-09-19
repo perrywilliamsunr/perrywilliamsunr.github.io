@@ -6,8 +6,7 @@ title: "Projects"
 
 <div class="proj-card" markdown="1">
 ![](assets/projects/diffusion.png){.proj-img}
-<h4>Ecological Diffusion Models & Forecasting</h4>
-
+#### Ecological Diffusion Models & Forecasting
 Reaction–diffusion models to predict spread of populations, invasives, and disease. Includes nonlinear/anisotropic diffusion, adaptive monitoring, and links among habitat, movement, and demography. Applications include sea otter recolonization (Alaska) and sage-grouse monitoring (Great Basin).  
 **Representative publications:** Williams et al. 2017, 2018; Lu et al. 2020; Eisaguirre et al. 2021; Leach et al. 2022; Eisaguirre et al. 2023a.  
 [Publications](/publications.html) • [CV](/cv.pdf)
@@ -15,8 +14,7 @@ Reaction–diffusion models to predict spread of populations, invasives, and dis
 
 <div class="proj-card" markdown="1">
 ![](assets/projects/demography.png){.proj-img}
-<h4>Wildlife Demography & Harvest Management</h4>
-
+#### Wildlife Demography & Harvest Management
 Hierarchical demographic models of survival, reproduction, and movement to quantify density dependence, harvest, and environmental change. Case studies include sage-grouse dynamics, cackling goose harvest, and Golden Eagle survival.  
 **Representative publications:** Golden et al. (in review); Acevedo et al. (in review); Williams 2015 (PhD); Byrne 2023 (MS); Pacific Flyway Council (2015).  
 [Publications](/publications.html) • [CV](/cv.pdf)
@@ -24,8 +22,7 @@ Hierarchical demographic models of survival, reproduction, and movement to quant
 
 <div class="proj-card" markdown="1">
 ![](assets/projects/predator-prey.png){.proj-img}
-<h4>Predator–Prey Dynamics & Human–Wildlife Conflict</h4>
-
+#### Predator–Prey Dynamics & Human–Wildlife Conflict
 Sea otters and shellfisheries, ravens with anthropogenic subsidies, and black bear conflict under changing snow and frost regimes. Embeds predator–prey dynamics in diffusion frameworks to inform coexistence and policy.  
 **Representative publications:** Shoemaker et al. (in review); Brockman et al. (accepted); Eisaguirre et al. 2023b; Williams et al. 2008.  
 [Publications](/publications.html) • [CV](/cv.pdf)
@@ -33,8 +30,7 @@ Sea otters and shellfisheries, ravens with anthropogenic subsidies, and black be
 
 <div class="proj-card" markdown="1">
 ![](assets/projects/movement.png){.proj-img}
-<h4>Integrating Movement Ecology Across Scales</h4>
-
+#### Integrating Movement Ecology Across Scales
 Links individual-level telemetry with population-level dynamics to bridge fine-scale behavior and range dynamics; connects step-selection, state-space, and mechanistic diffusion models.  
 **Representative publications:** Eisaguirre et al. 2025; Eisaguirre, Williams & Hooten 2024; Keating 2021 (MS).  
 [Publications](/publications.html) • [CV](/cv.pdf)
@@ -42,8 +38,7 @@ Links individual-level telemetry with population-level dynamics to bridge fine-s
 
 <div class="proj-card" markdown="1">
 ![](assets/projects/tools.png){.proj-img}
-<h4>Statistical & Computational Tools for Ecology</h4>
-
+#### Statistical & Computational Tools for Ecology
 Bayesian model selection, hierarchical abundance/survival models, and open-source software and training that disseminate quantitative tools for ecology.  
 **Representative publications:** Blume et al. 2024; Gerber & Williams 2020; Womble et al. 2017.  
 [Publications](/publications.html) • [CV](/cv.pdf)

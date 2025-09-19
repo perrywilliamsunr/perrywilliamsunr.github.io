@@ -1,0 +1,256 @@
+/* ---- Color tokens (Silvia-like vibe) ---- */
+:root{
+  --bg-soft: #faf6ef;        /* warm background */
+  --ink: #0b2a4a;            /* deep blue headings */
+  --ink-2:#1e446e;           /* secondary */
+  --accent:#b86133;          /* warm accent (buttons/links) */
+  --border:#e6e0d6;          /* soft border */
+}
+
+/* ---- Global ---- */
+body { background: var(--bg-soft); line-height: 1.7; }
+.page-content, .content, main.content, .quarto-container, .page-columns {
+  max-width: 1200px !important; padding-inline: 1.5rem;
+}
+h1,h2,h3{ color: var(--ink); line-height:1.2; font-family: Georgia, Cambria, "Times New Roman", serif; }
+p, li { font-size: 1.05rem; }
+
+/* Navbar tweak (optional subtle) */
+.navbar, .navbar-dark { background: transparent !important; }
+.navbar a.nav-link { color: #8c4f2d !important; font-weight: 600; }
+.navbar-brand { font-weight: 800; letter-spacing: .02em; color: var(--ink) !important; }
+
+/* ---- Home splash (two-column) ---- */
+.splash {
+  display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px;
+  align-items: center; margin: 3rem 0 2.5rem;
+}
+.intro { text-align: center; }
+.intro h1 { font-size: clamp(2rem, 5vw, 3.4rem); margin: 0 0 .4rem; }
+.intro p { margin: .6rem 0 0; color: #2c3e50; }
+.hero-art { display:flex; justify-content:center; }
+.round { width: min(480px, 100%); border-radius: 50%; border: 8px solid #f1e9dd; box-shadow: 0 12px 40px rgba(0,0,0,.06); }
+
+/* Icons row (simple links; swap to real icons later) */
+.icons { margin: .6rem 0 .8rem; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.icons a {
+  display:inline-block; padding:6px 10px; border-radius: 999px; background:#f2e7da;
+  color:#8c4f2d; border:1px solid #e4d7c8; text-decoration:none; font-weight:600; font-size:.95rem;
+}
+.icons a:hover { background:#ecdcc9; text-decoration:none; }
+
+/* CTA button */
+.cta {
+  display:inline-block; margin-top:.9rem; padding:.65rem 1rem; font-weight:800; letter-spacing:.02em;
+  color:#8c4f2d !important; border-bottom:2px solid #8c4f2d; text-decoration:none;
+}
+.cta:hover { filter: brightness(1.05); text-decoration:none; }
+
+/* Section spacing */
+section h2 { margin-top: 2rem; }
+
+/* Responsive */
+@media (max-width: 980px){
+  .splash{ grid-template-columns: 1fr; gap: 24px; }
+}
+
+/* --- Paper background override (site-wide) --- */
+:root{
+  /* Quarto/Bootstrap body bg + our custom token */
+  --bs-body-bg: #e8dcc7;
+  --bg-soft: #e8dcc7;
+}
+
+/* Force the page background to the beige */
+html, body { background: #e8dcc7 !important; }
+
+/* Keep content areas transparent so the beige shows through */
+.page-content, .content, main.content, .quarto-container, .page-columns { background: transparent !important; }
+
+/* --- Exact paper beige from raven2.png --- */
+:root{
+  --bs-body-bg: #f8e3c3;  /* matches image avg */
+  --bg-soft:   #f8e3c3;
+}
+
+/* Force page background to the exact beige */
+html, body { background: #f8e3c3 !important; }
+
+/* Keep content containers transparent so beige shows through */
+.page-content, .content, main.content, .quarto-container, .page-columns {
+  background: transparent !important;
+}
+
+/* --- Subtle paper texture overlay --- */
+body::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-size: 800px 800px; /* tile size; smaller = tighter grain */
+  background-repeat: repeat;
+  opacity: 0.28;               /* overall strength of texture */
+  mix-blend-mode: multiply;    /* lets beige show through, adds grain */
+}
+
+/* Make sure content sits above the overlay */
+body > * { position: relative; z-index: 1; }
+
+/* --- Subtle paper texture overlay --- */
+body::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-size: 600px 600px; /* tighter grain */
+  background-repeat: repeat;
+  opacity: 0.22;               /* overall strength */
+  mix-blend-mode: multiply;    /* blends grain with beige */
+}
+
+/* Make sure content sits above the overlay */
+body > * { position: relative; z-index: 1; }
+
+
+/* --- STRONG paper texture overlay (override) --- */
+html::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-size: 500px 500px;   /* tighter grain */
+  background-repeat: repeat;
+  opacity: 0.40;                   /* START strong so you can see it */
+  /* If you prefer blending with beige, uncomment the next line: */
+  /* mix-blend-mode: multiply; */
+}
+/* Ensure all content sits above the overlay */
+html > body > * { position: relative; z-index: 1; }
+
+/* --- Force paper grain as the actual page background --- */
+html::before, body::before { display: none !important; }  /* disable earlier overlays */
+
+body{
+  background-color: #f8e3c3 !important;              /* your beige */
+  background-repeat: repeat !important;
+  background-size: 600px 600px !important;            /* tighter grain */
+  background-blend-mode: multiply !important;         /* blend gray grain with beige */
+}
+
+/* --- Projects grid tiles --- */
+.proj-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin: 1rem 0 2rem;
+}
+@media (max-width: 1100px){ .proj-grid{ grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 720px){  .proj-grid{ grid-template-columns: 1fr; } }
+
+.proj-card{
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 14px;
+  padding: 16px 16px 14px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.06);
+  backdrop-filter: blur(2px);
+}
+.proj-card h3{
+  margin: 0 0 .25rem 0;
+  font-size: 1.15rem;
+  color: var(--ink, #0b2a4a);
+}
+.proj-card p{ margin: .35rem 0 .65rem; }
+.proj-card strong{ font-weight: 600; }
+.proj-card em{ color: #4b4b4b; }
+
+.proj-actions{
+  margin-top: .4rem;
+  font-size: .95rem;
+}
+.proj-actions a{
+  text-decoration: none;
+  border-bottom: 2px solid rgba(0,0,0,0.25);
+  color: #8c4f2d;
+  font-weight: 700;
+}
+.proj-actions a:hover{
+  color: #6f3e23;
+  border-color: rgba(0,0,0,0.4);
+  text-decoration: none;
+}
+
+/* --- Projects grid tiles --- */
+.proj-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin: 1rem 0 2rem;
+}
+@media (max-width: 1100px){ .proj-grid{ grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 720px){  .proj-grid{ grid-template-columns: 1fr; } }
+
+.proj-card{
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 14px;
+  padding: 16px 16px 14px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.06);
+  backdrop-filter: blur(2px);
+  transition: transform .08s ease, box-shadow .12s ease;
+}
+.proj-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.09);
+}
+.proj-card h3{
+  margin: .5rem 0 .25rem;
+  font-size: 1.15rem;
+  color: var(--ink, #0b2a4a);
+}
+.proj-card p{ margin: .35rem 0 .65rem; }
+.proj-card .proj-img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: .5rem;
+  background: #f5f5f5;
+}
+.proj-actions{
+  margin-top: .4rem;
+  font-size: .95rem;
+}
+.proj-actions a{
+  text-decoration: none;
+  border-bottom: 2px solid rgba(0,0,0,0.25);
+  color: #8c4f2d;
+  font-weight: 700;
+}
+.proj-actions a:hover{
+  color: #6f3e23;
+  border-color: rgba(0,0,0,0.4);
+  text-decoration: none;
+}
+
+/* ===== FIX: Project cards & images (no external assets required) ===== */
+.project-img,
+img.project-img {
+  width: 100%;
+  height: auto !important;     /* ensure no forced height */
+  display: block;
+  border-radius: 12px;
+  object-fit: contain !important;  /* avoid cropping if aspect is enforced elsewhere */
+  background: transparent;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.project-card p { margin: 0; }

@@ -1,3 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+FILE="publications.qmd"
+[ -f "$FILE" ] && cp "$FILE" "$FILE.bak.$(date +%s)" || true
+
+cat > "$FILE" <<'QMD'
 ---
 title: "Publications"
 page-layout: full
@@ -5,6 +12,8 @@ format:
   html:
     link-citations: true
 ---
+
+# Publications
 
 ## Journal Articles
 
@@ -90,3 +99,22 @@ format:
 - Lesmeister, DB, S Blomquist, EV Lonsdorf, D Wood, PJ Williams, B Pendley, KE Mangan, BA Walker. 2014. Forest invasive adaptive management on National Wildlife Refuge Lands in the central hardwood region. *Proceedings of the 19th Central Hardwood Forest Conference* 19:22–35.
 - Williams, PJ. 2008. *Home range and foraging habitat selection of spotted owls in the central Sierra Nevada*. M.S. Thesis, University of Minnesota. St. Paul, MN.
 - Gutiérrez, RJ, S Whitmore, ME Seamans, G Zimmerman, PJ Williams, and P Stine. 2008. Acute effects of canopy reduction on California spotted owls: challenges for adaptive management. Technical Report to USFS.
+QMD
+
+# Optional: small style tweaks for readability
+mkdir -p styles
+touch styles/styles.scss
+if ! grep -q "/* PUBLICATIONS PAGE TWEAKS v2 */" styles/styles.scss 2>/dev/null; then
+cat >> styles/styles.scss <<'CSS'
+
+/* PUBLICATIONS PAGE TWEAKS v2 */
+#quarto-document-content h2, #quarto-document-content h3 { margin-top: 1.2rem; }
+#quarto-document-content ul { margin-left: 1.1rem; }
+#quarto-document-content li { margin-bottom: .4rem; }
+CSS
+fi
+
+rm -rf _site _freeze || true
+echo "➜ Launching Quarto preview… (Shift+Reload)"
+quarto preview
+QMD

@@ -1,0 +1,16 @@
+---
+title: "Publications"
+bibliography: refs.bib
+csl: https://www.zotero.org/styles/apa
+nocite: |
+  @*   # include all items from refs.bib
+page-layout: full
+---
+
+::: {.pub-intro}
+Below is a selected list. Add or update entries in **refs.bib**.
+:::
+
+## Publications
+::: {#refs}
+:::
