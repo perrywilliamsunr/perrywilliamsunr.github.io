@@ -1,0 +1,10 @@
+---
+title: "Teaching"
+page-layout: full
+---
+
+**NRES 488 — Dynamics & Management of Wildlife Populations**  
+Applied population ecology with a focus on model-based inference and management.
+
+**NRES 710 — Graduate Environmental Statistics**  
+Bayesian modeling, model selection/averaging, predictive checking, and reproducible workflows.

@@ -1,0 +1,10 @@
+---
+title: "About"
+page-layout: full
+---
+
+I am an associate professor and department chair at the University of Nevada, Reno. My research focuses on spatiotemporal population dynamics, ecological diffusion, and forecasting under uncertainty. I work closely with management agencies to translate models into practice.
+
+- Methods: hierarchical Bayesian models, reaction–diffusion PDEs, MCMC
+- Software: R (EcoDiffusion), C++ accelerators, PyTorch prototypes
+- Systems: sage-grouse, sea otters, shrubland ecosystems

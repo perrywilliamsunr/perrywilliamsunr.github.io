@@ -1,0 +1,18 @@
+---
+title: "Projects"
+page-layout: full
+---
+
+## EcoDiffusion (R package)
+Hierarchical Bayesian ecological diffusion for spatiotemporal population dynamics and forecasting.
+- Growth: exponential / logistic
+- Spatial basis for initial conditions
+- C++ solvers and MCMC
+- Reproducible workflows
+
+## Population dynamics & movement
+- Sage-grouse lek dynamics and spatial spread
+- Effects of climate / land use on abundance and distribution
+
+## Species distributions & human impacts
+- Sea otter point processes; forecasting range dynamics under uncertainty

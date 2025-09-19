@@ -1,0 +1,26 @@
+---
+title: "Ecological Dynamics Across Space and Time"
+page-layout: full
+---
+
+::: {.splash}
+::: {.intro}
+# Perry Williams, PhD
+**Ecological Modeling & Forecasting**
+
+<div class="icons">
+  <a href="https://orcid.org/" aria-label="ORCID">ORCID</a>
+  <a href="https://scholar.google.com/" aria-label="Google Scholar">Scholar</a>
+  <a href="https://github.com/perrywilliamsunr" aria-label="GitHub">GitHub</a>
+  <a href="mailto:perryw@unr.edu" aria-label="Email">Email</a>
+</div>
+
+I study ecological dynamics across space and time. My work focuses on hierarchical Bayesian models and ecological diffusion to understand population and process change, quantify uncertainty, and build reproducible forecasting workflows.
+
+[Learn more about me →](about.html){.cta}
+:::
+
+::: {.hero-art}
+![](assets/raven2-transparent.png)
+:::
+:::

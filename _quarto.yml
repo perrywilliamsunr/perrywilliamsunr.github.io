@@ -1,0 +1,48 @@
+project:
+  type: website
+
+website:
+  title: "Perry Williams"
+  site-url: "https://perrywilliamsunr.github.io"
+  description: "Spatiotemporal modeling for forecasting and uncertainty."
+  image: assets/raven2-transparent.png
+  navbar:
+    left:
+      - text: Blog
+        href: blog/index.qmd
+      - text: Projects
+        href: projects.qmd
+      - text: Publications
+        href: publications.qmd
+      - text: Teaching
+        href: teaching.qmd
+      - text: About
+        href: about.qmd
+      - text: CV
+        href: assets/cv.pdf
+    right:
+      - icon: github
+        href: https://github.com/perrywilliamsunr
+      - icon: rss
+        href: blog/index.xml
+  page-footer:
+    left: "© {date:YYYY} Perry Williams"
+    right: "Built with Quarto"
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles/styles.scss
+    toc: false
+    smooth-scroll: true
+    code-copy: true
+    anchor-sections: true
+    page-layout: full
+
+resources:
+  - CNAME
+
+execute:
+  freeze: auto

@@ -1,0 +1,7 @@
+---
+title: "Site relaunch in Quarto"
+date: 2025-09-19
+categories: [website, quarto]
+---
+
+Kicking off a fresh Quarto site inspired by Silvia Canelón’s workflow.

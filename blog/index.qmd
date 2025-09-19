@@ -1,0 +1,13 @@
+---
+title: "Blog"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  feed: true
+  categories: true
+  image-align: left
+page-layout: full
+---
+
+Notes, tutorials, and updates.
