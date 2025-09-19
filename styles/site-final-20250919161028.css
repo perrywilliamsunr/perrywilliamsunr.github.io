@@ -29,3 +29,19 @@ img.proj-img, #quarto-document-content img.proj-img{
     float:none; display:block; margin:0 auto .75rem; width:200px !important; max-width:70% !important;
   }
 }
+
+/* --- FORCE BEIGE (GH Pages safe) --- */
+html, body, .quarto-light, .quarto-light body,
+.bg-body, .quarto-page, .page-content,
+#quarto-content, #quarto-document-content {
+  background-color: #f7efe5 !important;
+  background: #f7efe5 !important;
+}
+/* Let inner wrappers show page bg */
+.content, main, .content .page-columns {
+  background: transparent !important;
+}
+/* Avoid white tiles/cards */
+.card, .listing .quarto-grid-item {
+  background: #f7efe5 !important;
+}
