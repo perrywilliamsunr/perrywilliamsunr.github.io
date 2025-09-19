@@ -3,29 +3,33 @@
   <meta charset="utf-8">
   <title>Perry Williams</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="/assets/site.css">
   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-<header class="site-header">
-  <div class="wrap">
-    <div class="brand">Perry Williams</div>
-    <nav class="site-nav">
-      <a href="/index.html">Home</a>
-      <a href="/research.html">Research</a>
-      <a href="/publications.html">Publications</a>
-      <a href="/teaching.html">Teaching</a>
-      <a href="/cv.html">CV</a>
-    </nav>
-  </div>
+<header class="topbar">
+  <div class="brand">Perry Williams</div>
+  <nav class="topnav">
+    <a href="/index.html">Home</a>
+    <a href="/research.html">Research</a>
+    <a href="/publications.html">Publications</a>
+    <a href="/teaching.html">Teaching</a>
+    <a href="/cv.html">CV</a>
+  </nav>
 </header>
-<main id="content">
-<script>
-  // Add a 'home' class to body on the homepage for special styling
-  (function(){
-    var p = location.pathname.replace(/\/+$/, '');
-    if (p === '' || p === '/' || p.endsWith('/index.html')) {
-      document.body.classList.add('home');
-    }
-  })();
-</script>
+
+<div class="layout">
+  <aside class="sidebar">
+    <img class="avatar" src="/assets/perry_2024.jpg" alt="Perry Williams">
+    <div class="name">Perry Williams</div>
+    <div class="role">Ecologist & Statistician</div>
+    <div class="affil small">Associate Professor<br>Natural Resources & Environmental Science<br>University of Nevada, Reno</div>
+    <div class="links">
+      <a href="mailto:perryw@unr.edu">Email</a>
+      <a href="https://github.com/perrywilliamsunr">GitHub</a>
+      <a href="/cv.html">CV</a>
+    </div>
+  </aside>
+
+  <main class="content">
