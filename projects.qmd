@@ -5,7 +5,7 @@ title: "Projects"
 <div class="proj-grid" markdown="1">
 
 <div class="proj-card" markdown="1">
-![](assets/projects/raven_3.png){.proj-img}
+![](assets/projects/raven_4.png){.proj-img}
 <h4>Ecological Diffusion Models & Forecasting</h4>
 
 Reaction–diffusion models to predict spread of populations, invasives, and disease. Includes nonlinear/anisotropic diffusion, adaptive monitoring, and links among habitat, movement, and demography. Applications include sea otter recolonization (Alaska) and sage-grouse monitoring (Great Basin).  
