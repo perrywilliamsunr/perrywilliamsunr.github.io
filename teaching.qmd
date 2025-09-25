@@ -4,7 +4,10 @@ page-layout: full
 ---
 
 **NRES 488 — Dynamics & Management of Wildlife Populations**  
-Applied population ecology with a focus on model-based inference and management.
+Applied population ecology with a focus on how models inform management decisions. Topics include population growth, survival analysis, capture–recapture, occupancy modeling, harvest management, and population viability analysis, with case studies from contemporary wildlife issues.
 
 **NRES 710 — Graduate Environmental Statistics**  
-Bayesian modeling, model selection/averaging, predictive checking, and reproducible workflows.
+Core methods in environmental data analysis, beginning with exploratory data analysis and linear regression, then extending to model checking, model selection, and information-theoretic approaches. Advanced topics include generalized linear models, mixed-effects models, and generalized linear mixed-effects models, with emphasis on implementation in R and reproducible research workflows.
+
+**NRES 797 — Bayesian Hierarchical Modeling**  
+Graduate seminar focused on hierarchical Bayesian approaches to ecological and environmental data. Topics include multilevel models, spatio-temporal processes, ecological diffusion, and integration of spatial covariates. Students gain experience implementing models in R and Stan, with attention to uncertainty quantification, forecasting, and communicating results to decision makers.
