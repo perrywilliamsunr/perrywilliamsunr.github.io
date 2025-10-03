@@ -8,20 +8,13 @@ format:
 
 ## Journal Articles
 
-### In Review / Revision
-
-- Golden<sup>g</sup>, JE, JG Barnes, and PJ Williams<sup>s</sup>. *In review.* Estimating Survival and Population Trajectories of Golden Eagles in Nevada. *Journal of Raptor Research*.
-- Acevedo<sup>g</sup>, CR, PJ Williams<sup>s</sup>, JS Sedinger, and T Dilts. *In review.* Spatio-temporal drivers of sage-grouse population change in Nevada. *Ecology and Evolution*.
-- Shoemaker, KT, H Reich, PJ Williams, M Osterhout, J Vasquez, J Beckmann, C Lackey, KM Stewart. *In review.* Late season frosts and changing snowpack may exacerbate human-bear conflicts. *Ecosphere*.
-
-### Accepted
-
-- Brockman<sup>g</sup>, JC, PS Coates, JC Tull, ST O'Neil, and PJ Williams<sup>s</sup>. *Accepted.* The effects of breeding status on common raven movement, home range, and habitat selection. *The Journal of Wildlife Management*. 
-- Wann, G, A Whipple, E Orning, M McLachlan, J Beck, PS Coates, C Conway, J Dinkins, A Johnston, C Hagen, P Makela, D Naugle, M Schroeder, J Sedinger, B Walker, PJ Williams, R Inman, C Aldridge. *Accepted.* Greater sage-grouse seasonal habitat associations: A review and considerations for interpretation and management applications. *The Journal of Wildlife Management*. 
-
 ### Published
+- Golden<sup>g</sup>, JE, JG Barnes, and PJ Williams<sup>s</sup>. 2025. Estimating Survival and Population Trajectories of Golden Eagles in Nevada. *Journal of Raptor Research*.
+- Brockman<sup>g</sup>, JC, PS Coates, JC Tull, ST O'Neil, and PJ Williams<sup>s</sup>. 2025* The effects of breeding status on common raven movement, home range, and habitat selection. *The Journal of Wildlife Management* 89:e70004.
+- Wann, G, A Whipple, E Orning, M McLachlan, J Beck, PS Coates, C Conway, J Dinkins, A Johnston, C Hagen, P Makela, D Naugle, M Schroeder, J Sedinger, B Walker, PJ Williams, R Inman, C Aldridge. 2025. Greater sage-grouse seasonal habitat associations: A review and considerations for interpretation and management applications. *The Journal of Wildlife Management* 89:e70022. 
+- Shoemaker, KT, H Reich, PJ Williams, M Osterhout, J Vasquez, J Beckmann, C Lackey, KM Stewart. 2025. Late season frosts and changing snowpack may exacerbate human-bear conflicts. *Ecosphere* 16:e70379
+- Eisaguirre, JM, MG Lohman<sup>g</sup>, GG Frye, HE Johnson, TV Riecke, & PJ Williams<sup>s</sup>. 2025. Estimating spatially explicit survival and mortality risk from telemetry data with thinned point process models. *Ecology Letters* 28:e70092. 
 
-- Eisaguirre, JM, MG Lohman<sup>g</sup>, GG Frye, HE Johnson, TV Riecke, & PJ Williams<sup>s</sup>. 2025. Estimating spatially explicit survival and mortality risk from telemetry data with thinned point process models. *Ecology Letters* e70092. 
 - Eisaguirre<sup>p</sup>, JM, PJ Williams<sup>s</sup>, and MB Hooten. 2024. Rayleigh step-selection functions and connections to coninuous-time mechanistic movement models. *Movement Ecology*. 12:14 pages. 
 - Blum<sup>p</sup>, ME, JR Bennett, FE Buderman, KM Stewart, M Cox, and PJ Williams<sup>s</sup>. 2024. Comparing contemorary models to traditional indices to estimate abundance of desert bighorn sheep. *Journal of Wildlife Management*. 88:e22517. 
 - Eisaguirre<sup>p</sup>, JM, PJ Williams<sup>s</sup>, X Lu, ML Kissling, PA Schuette, BP Weitzman, WS Beatty, GG Esslinger, JN Womble, and MB Hooten. 2023. Informing management of recovering predators and their prey with ecological diffusion models. *Frontiers in Ecology and the Environment*. 21:479–488.
